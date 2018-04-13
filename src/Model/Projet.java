@@ -1,64 +1,31 @@
+package Model;
 
-import java.util.*;
+import java.util.Objects;
 
 /**
- * 
+ *
  */
 public class Projet {
 
     /**
      * Default constructor
      */
+    protected String titre = "";
+    protected String dated = "";
+    protected String datef = "";
+
     public Projet() {
     }
+    
+    public Projet(String titre, String dated,String datef) {
+        this.titre=titre;
+        this.dated=dated;
+        this.datef=datef;
+    }
 
-    /**
-     * 
-     */
-    private String titre;
-
-    /**
-     * 
-     */
-    private String dated;
-
-    /**
-     * 
-     */
-    private String datef;
-
-
-    /**
-     * 
-     */
-    public Set<Membres> membre;
-
-    /**
-     * 
-     */
-    public Set<Disciplines> discipline;
-
-    /**
-     * 
-     */
-    public Client client;
-
-    /**
-     * 
-     */
-    public Set<Travail> travail;
-
-    /**
-     * 
-     */
-    public Set<Temps> temps;
-
-    /**
-     * @return
-     */
     public String getTitre() {
         // TODO implement here
-        return "";
+        return titre;
     }
 
     /**
@@ -88,7 +55,7 @@ public class Projet {
      */
     public String getDated() {
         // TODO implement here
-        return "";
+        return dated;
     }
 
     /**
@@ -103,7 +70,7 @@ public class Projet {
      */
     public String getDatef() {
         // TODO implement here
-        return "";
+        return datef;
     }
 
     /**
@@ -114,7 +81,7 @@ public class Projet {
     }
 
     /**
-     * 
+     *
      */
     public class Travail {
 
@@ -125,12 +92,12 @@ public class Projet {
         }
 
         /**
-         * 
+         *
          */
         private String dateengagement;
 
         /**
-         * 
+         *
          */
         private int pourcentagetemps;
 
