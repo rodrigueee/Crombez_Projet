@@ -19,7 +19,7 @@ public class ProjetVue {
     private Scanner sc = new Scanner(System.in);
 
     public int menu() {
-        List<String> listeItems = new ArrayList<>(Arrays.asList(
+        List<String> ListeItems = new ArrayList<>(Arrays.asList(
                 "ajouter client",
                 "ajouter membre",
                 "ajouter projet",
@@ -27,13 +27,13 @@ public class ProjetVue {
                 "liste clients",
                 "liste membres",
                 "fin"));
-        //affListe(ListeItems);
+        affListe(ListeItems);
 
         int ch;
         do {
             String chs = getMsg("Votre choix");
             ch = Integer.parseInt(chs);
-            if (ch > 0 && ch <= listeItems.size()) {
+            if (ch > 0 && ch <= ListeItems.size()) {
                 break;
             }
             affMsg("Choix incorrect");
@@ -107,6 +107,14 @@ public class ProjetVue {
         for(Object o : liste){
             affMsg((i++)+"." + o);
         }
+    }
+    
+    public Client formRechClient(){
+        String nom= getMsg("Nom : ");
+        String tel= getMsg("Telephone : ");
+        String adresse=getMsg("Adresse : ");
+        return new Client(nom,tel,adresse);
+        
     }
     
     

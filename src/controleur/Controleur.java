@@ -4,16 +4,28 @@ import vue.ProjetVue;
 import Model.ProjetModele;
 import java.util.List;
 import Model.Client;
+import Model.Membres;
+import Model.Projet;
 
 public class Controleur {
 
-    private ProjetModele pm = null;
-    private ProjetVue pv = null;
+    /**
+     * Declaration de variables des types
+     */
+    private ProjetModele pm;
+    private ProjetVue pv;
 
+    /**
+     * Constructeur par defaut
+     */
     public Controleur() {
 
     }
-
+    /**
+     * Constructeur paramétré
+     * @param pm
+     * @param pv 
+     */
     public Controleur(ProjetModele pm, ProjetVue pv) {
 
         this.pm = pm;
@@ -39,10 +51,10 @@ public class Controleur {
                     changementAdresseC();
                     break;
                 case 5:
-                    ListeClients();
+                   // ListeClients();
                     break;
                 case 6:
-                    ListeMembres();
+                   // ListeMembres();
                     break;
                 case 7:
                     pv.affMsg("Bye");
@@ -85,11 +97,11 @@ public class Controleur {
         pv.affMsg(msg);
     }
 
-    public Clien rechClient() {
+    public Client rechClient() {
         Client cRech = pv.formRechClient();
         return pm.getClient(cRech);
     }
-
+/*
     public void listeClients() {
         List<Client> lc = pm.tousClients();
         pv.affListe(lc);
@@ -99,4 +111,5 @@ public class Controleur {
         List<Membres> lm = pm.tousMembres();
         pv.affListe(lm);
     }
+*/
 }

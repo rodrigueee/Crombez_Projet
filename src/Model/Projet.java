@@ -1,5 +1,6 @@
 package Model;
 
+import java.util.ArrayList;
 import java.util.Objects;
 
 /**
@@ -13,7 +14,7 @@ public class Projet {
     protected String titre = "";
     protected String dated = "";
     protected String datef = "";
-
+    protected ArrayList<Client> cli = new ArrayList() ;
     public Projet() {
     }
     
@@ -80,27 +81,6 @@ public class Projet {
         // TODO implement here
     }
 
-    /**
-     *
-     */
-    public class Travail {
-
-        /**
-         * Default constructor
-         */
-        public Travail() {
-        }
-
-        /**
-         *
-         */
-        private String dateengagement;
-
-        /**
-         *
-         */
-        private int pourcentagetemps;
-
-    }
+    
 
 }

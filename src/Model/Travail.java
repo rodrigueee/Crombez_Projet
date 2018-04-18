@@ -25,16 +25,7 @@ public class Travail {
     /**
      * 
      */
-    public Projet projet;
 
-    /**
-     * 
-     */
-    public Membres membre;
-
-    /**
-     * @return
-     */
     public String getDateengagement() {
         // TODO implement here
         return "";

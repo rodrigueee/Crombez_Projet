@@ -20,16 +20,7 @@ public class Temps {
     /**
      * 
      */
-    public Projet projet;
-
-    /**
-     * 
-     */
-    public Disciplines discipline;
-
-    /**
-     * @return
-     */
+  
     public int getNjh() {
         // TODO implement here
         return 0;
