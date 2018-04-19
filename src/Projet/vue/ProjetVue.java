@@ -5,9 +5,9 @@
  */
 package vue;
 
-import Model.Client;
-import Model.Membres;
-import Model.Projet;
+import modele.Client;
+import modele.Membres;
+import modele.Projet;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
@@ -112,8 +112,8 @@ public class ProjetVue {
     public Client formRechClient(){
         String nom= getMsg("Nom : ");
         String tel= getMsg("Telephone : ");
-        String adresse=getMsg("Adresse : ");
-        return new Client(nom,tel,adresse);
+    
+        return new Client(nom,tel);
         
     }
     

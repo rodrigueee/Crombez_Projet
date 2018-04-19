@@ -1,11 +1,11 @@
 package controleur;
 
 import vue.ProjetVue;
-import Model.ProjetModele;
+import modele.ProjetModele;
 import java.util.List;
-import Model.Client;
-import Model.Membres;
-import Model.Projet;
+import modele.Client;
+import modele.Membres;
+import modele.Projet;
 
 public class Controleur {
 

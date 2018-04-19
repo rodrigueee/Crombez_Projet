@@ -1,15 +1,17 @@
+package modele;
+
 
 import java.util.*;
 
 /**
  * 
  */
-public class niveaux {
+public class Niveaux {
 
     /**
      * Default constructor
      */
-    public niveaux() {
+    public Niveaux() {
     }
 
     /**

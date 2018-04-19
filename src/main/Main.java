@@ -1,16 +1,16 @@
-package Launcher;
+package main;
 
 import controleur.Controleur;
 import vue.ProjetVue;
-import Model.ProjetModele;
+import modele.ProjetModele;
 
-public class Launch {
+public class Main {
 
     private Controleur ct;
     private ProjetModele pjm;
     private ProjetVue pjv;
 
-    public Launch() {
+    public Main() {
 
         pjv = new ProjetVue();
         pjm = new ProjetModele();
@@ -20,7 +20,7 @@ public class Launch {
     }
     
     public static void main(String[] args){
-        Launch l = new Launch();
+        Main l = new Main();
     }
 
 }

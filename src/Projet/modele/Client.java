@@ -1,4 +1,4 @@
-package Model;
+package modele;
 
 import java.util.Objects;
 
@@ -21,6 +21,16 @@ public class Client {
         this.nom = nom;
         this.tel = tel;
         this.adresse = adresse;
+    }
+    /**
+     * Constructeur pour la methode changeAdresse
+     * @param nom
+     * @param tel 
+     */
+    public Client (String nom,String tel)
+    {
+        this.nom=nom;
+        this.tel=tel;
     }
 
     public String getNom() {

@@ -1,36 +1,38 @@
+package modele;
+
 
 import java.util.*;
 
 /**
  * 
  */
-public class Temps {
+public class Disciplines {
 
     /**
      * Default constructor
      */
-    public Temps() {
+    public Disciplines() {
     }
 
     /**
      * 
      */
-    private int njh;
+    private String nomdiscipline;
 
-    /**
-     * 
-     */
+
   
-    public int getNjh() {
+    public String getNomdiscipline() {
         // TODO implement here
-        return 0;
+        return "";
     }
 
     /**
      * @param value
      */
-    public void setNjh(int value) {
+    public void setNomdiscipline(String value) {
         // TODO implement here
     }
+
+   
 
 }
